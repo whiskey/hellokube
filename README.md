@@ -6,3 +6,7 @@ My local Kubernetes playground.
 
 - `/` Root directory for all global deployment scripts
 - `/App` Simple Hello World _Flask_ application
+
+## Caveats
+
+- According to documentation MiniKube does not provide a real load balancer ([source](https://kubernetes.io/docs/setup/minikube/#known-issues)) 
