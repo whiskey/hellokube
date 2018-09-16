@@ -10,3 +10,4 @@ My local Kubernetes playground.
 ## Caveats
 
 - According to documentation MiniKube does not provide a real load balancer ([source](https://kubernetes.io/docs/setup/minikube/#known-issues)) 
+- no production server and reverse proxy for application (e.g. `gunicorn` + `nginx`)
