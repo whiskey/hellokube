@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: hello-http
+
+spec:
+  selector:
+    matchLabels:
+      app: MiniKubeApp
+  replicas: 3
+
+  template:
+    metadata:
+      labels:
+        app: MiniKubeApp
+    spec:
+      containers:
+      - name: hellominikube
+        image: whiskey/hellominikube:latest
+        ports:
+        - containerPort: 5000
